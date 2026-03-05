@@ -1,0 +1,13 @@
+#Hubert Radzik
+#input phase
+appliance_name = input("Enter appliance name: ")
+appliance_cost = float(input("Enter appliance cost: "))
+#process phase
+if appliance_cost > 1000: warranty = appliance_cost * 0.10
+else: warranty = appliance_cost * 0.05
+total = appliance_cost + warranty
+#output phase
+print("Appliance name:", appliance_name)
+print("Appliance cost: $", format(appliance_cost, ".2f"))
+print("Warranty cost: $", format(warranty, ".2f"))
+print("Total cost: $", format(total, ".2f"))
